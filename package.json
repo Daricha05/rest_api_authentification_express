@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon"
+    "dev": "nodemon",
+    "start": "node index.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,8 @@
     "qrcode": "^1.5.4"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
   }
 }
