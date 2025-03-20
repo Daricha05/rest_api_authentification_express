@@ -1,0 +1,9 @@
+# Ignorer un fichier spécifique
+index copy.js
+
+# Ignorer un dossier et tout son contenu
+node_modules/
+config/
+
+# Ignorer tous les fichiers d'un certain type
+*.db
