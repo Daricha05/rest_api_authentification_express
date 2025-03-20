@@ -194,7 +194,7 @@ router.get("/2fa/generate", ensureAuthenticated, async (req, res) => {
           const user = await users.findOne({ _id: req.user.id })
   
           const secret = authenticator.generateSecret()
-          const uri = authenticator.keyuri(user.email, 'manfra.io', secret)
+          const uri = authenticator.keyuri(user.email, 'richard.io', secret)
   
           await users.update({ _id: req.user.id }, { $set: { '2faSecret': secret } })
           await users.compactDatafile()
